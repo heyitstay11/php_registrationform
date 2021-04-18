@@ -68,7 +68,7 @@ form input{
 .button-container{
 	display: flex;
 	align-items: center;
-	justify-content: space-between;
+	justify-content: space-around;
 	margin: 1rem;
 }
 
@@ -78,15 +78,14 @@ button{
 	font-size: 1.2rem;
 	letter-spacing: 1px;
 	padding: 5px 9px;
-	background-color: darkblue;
-	border: none;
+	background-color: #6065e8;
 	color: white;
 	border: 4px;
 	transition: all .2s ease-in-out;
 }
 
 button:hover{
-	background-color: steelblue;
+	background-color: #335ac4;
 }
 
 a{

@@ -65,6 +65,9 @@
 		<label for="password">Password</label>
 		<input type="password" name="password">
 		<button type="submit" name="submit">Login</button>
+		<div class="button-container">
+		<p>Not a User  <a href="register.php">Register</a> </p>			
+		</div>
 	</form>
 </div>
 
