@@ -25,9 +25,9 @@
 
 ## Login Page
 
-![login](/image/login.png "Login page")
+![login](imgs/login.png "Login page")
 
 
 ## Home Page
 
-![Home](/image/home.png "Home page")
+![Home](imgs/home.png "Home page")
