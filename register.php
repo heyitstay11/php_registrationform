@@ -55,7 +55,7 @@
 
 			mysqli_query($conn, $query);
 			$_SESSION['username'] = $username;
-			header('location: home.php');
+			header('location: login.php');
 		}
 
 
@@ -67,22 +67,31 @@
 <html>
 <head>
 	<title>Registration</title>
+	<link rel="stylesheet" type="text/css" href="styles.css">
 </head>
 <body>
 	<h2>Register</h2>
 
 	<?php include('errors.php') ?>
 
+<div class="form-container">
 	<form action="register.php" method="POST">
 		<label for="username">Username</label>
-		<input type="text" autocomplete="off" value="<?php echo htmlspecialchars($username); ?>" name="username">
+		<input type="text" placeholder="Eg: John123" autocomplete="off" value="<?php echo htmlspecialchars($username); ?>" name="username">
 		<label for="email">Email</label>
-		<input type="email" autocomplete="off"  value="<?php echo htmlspecialchars($email); ?>" name="email">
+		<input type="email" placeholder="Eg: johndoe@mail.com" autocomplete="off"  value="<?php echo htmlspecialchars($email); ?>" name="email">
 		<label for="password">Password</label>
 		<input type="password" name="password">
 		<label for="password1">Confirm Password</label>
 		<input type="password" name="password1">
-		<button type="submit" name="submit">Submit</button>
+		<div class="button-container">
+		<button type="submit" name="submit">Submit</button>	<p>
+			Alredy a User <a href="login.php">Log In</a>
+		</p>
+		</div>
+		
 	</form>
+</div>
+	
 </body>
 </html>

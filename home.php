@@ -20,9 +20,12 @@
 <html>
 <head>
 	<title>Home Page</title>
+	<link rel="stylesheet" type="text/css" href="styles.css">
 </head>
 <body>
 	<h1>Welcome <?php echo htmlspecialchars($_SESSION['username']); ?></h1>
-	<button> <a href="home.php?logout=1"> Log Out </a></button>
+	<div class="container">
+		<a href="home.php?logout=1" class="logout"> Log Out </a>
+	</div>
 </body>
 </html>

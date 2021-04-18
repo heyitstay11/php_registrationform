@@ -51,18 +51,22 @@
 <html>
 <head>
 	<title>Login</title>
+	<link rel="stylesheet" type="text/css" href="styles.css">
 </head>
 <body>
 	<h2>Login</h2>
 
 	<?php include('errors.php') ?>
 
+<div class="form-container">
 	<form action="login.php" method="POST">
 		<label for="username">Username</label>
-		<input type="text" autocomplete="off" value="<?php echo htmlspecialchars($username); ?>" name="username">
+		<input type="text" placeholder="Eg: John123" autocomplete="off" value="<?php echo htmlspecialchars($username); ?>" name="username">
 		<label for="password">Password</label>
 		<input type="password" name="password">
 		<button type="submit" name="submit">Login</button>
 	</form>
+</div>
+
 </body>
 </html>

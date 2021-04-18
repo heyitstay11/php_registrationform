@@ -1,9 +1,9 @@
 <?php if(count($errors) > 0 ) : ?>
-
+	<div class="container">
 		<?php foreach ($errors as $error) : ?>
 
-			<p class="error"> <?php echo $error ?> </p>
+				<p class="error"> <?php echo $error ?> </p>
 
-		<?php endforeach ?>
-
+			<?php endforeach ?>
+	</div>
 <?php endif ?>
